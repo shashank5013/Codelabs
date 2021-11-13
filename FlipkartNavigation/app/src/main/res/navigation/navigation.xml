@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/shopFragment">
+
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.android.flipkartnavigation.ShopFragment"
+        android:label="Shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/superCoinFragment"
+        android:name="com.example.android.flipkartnavigation.SuperCoinFragment"
+        android:label="SuperCoin" />
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.example.android.flipkartnavigation.CreditFragment"
+        android:label="Credit" />
+    <fragment
+        android:id="@+id/quickFragment"
+        android:name="com.example.android.flipkartnavigation.QuickFragment"
+        android:label="Quick" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.android.flipkartnavigation.ProductFragment"
+        android:label="Product" >
+        <argument
+            android:name="productName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.android.flipkartnavigation.CartFragment"
+        android:label="Cart" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.android.flipkartnavigation.UserFragment"
+        android:label="User" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.android.flipkartnavigation.SettingFragment"
+        android:label="Setting" />
+</navigation>
